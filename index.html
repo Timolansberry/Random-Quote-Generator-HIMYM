@@ -28,7 +28,12 @@
 
         document.getElementById("tweet-quote").href = twitterLink;
         document.getElementById("text").innerText = randomQuoteData.quote;
-        document.getElementById("author").innerText = randomQuoteData.author;
+        document.getElementById("author").innerHTML = "<button class='btn btn-sm btn-link' onclick='revealAuthor()'>Click to reveal name</button><span id='author-name' class='d-none'>" + randomQuoteData.author + "</span>";
+      }
+
+      function revealAuthor() {
+        document.getElementById("author-name").classList.remove("d-none");
+        document.querySelector("#author button").classList.add("d-none");
       }
     </script>
   </head>
@@ -57,3 +62,6 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBv
+    </script>
+  </body>
+</html>
