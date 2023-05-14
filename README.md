@@ -1,4 +1,4 @@
-# Random Quote Generator - HIMYM
+# Random Quote Generator - HIMYM 
 
 Simple random quote generator project for freecodecamp.
 It shows random How I Met Your Mother quotes, made using Javascript and bootstrap
